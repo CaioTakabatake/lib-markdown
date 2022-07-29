@@ -28,4 +28,4 @@ async function getFile(path) {
     }
 }
 
-getFile('./arquivos/texto1.md')
+module.exports = { getFile };
