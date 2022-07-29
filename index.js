@@ -14,7 +14,7 @@ function getLinks(text) {
         links.push({ [temp[1]]: temp[2] });
     }
 
-    return links;
+    return links.length === 0 ? 'links not found' : links;
 }
 
 async function getFile(path) {
@@ -22,7 +22,7 @@ async function getFile(path) {
 
     try {
         const text = await fs.promises.readFile(path, encoding);
-        console.log(getLinks(text));
+        return getLinks(text);
     } catch (err) {
         throwError(err);
     }
