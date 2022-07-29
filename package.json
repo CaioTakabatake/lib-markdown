@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/CaioTakabatake/lib-markdown#readme",
   "dependencies": {
-    "chalk": "4.1.2"
+    "chalk": "4.1.2",
+    "node-fetch": "^3.2.9"
   }
 }
